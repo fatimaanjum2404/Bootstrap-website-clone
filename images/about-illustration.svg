@@ -1,0 +1,75 @@
+<svg viewBox="0 0 700 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1a3e"/>
+      <stop offset="100%" stop-color="#3a2f8f"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b85ff"/>
+      <stop offset="100%" stop-color="#615cfd"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="700" height="800" fill="url(#bgGrad)"/>
+
+  <!-- soft decorative circles -->
+  <circle cx="90" cy="120" r="140" fill="#615cfd" opacity="0.15"/>
+  <circle cx="620" cy="700" r="180" fill="#8b85ff" opacity="0.12"/>
+  <circle cx="600" cy="140" r="60" fill="#ffffff" opacity="0.05"/>
+
+  <!-- scattered dot grid -->
+  <g fill="#ffffff" opacity="0.18">
+    <circle cx="60" cy="620" r="4"/>
+    <circle cx="90" cy="620" r="4"/>
+    <circle cx="120" cy="620" r="4"/>
+    <circle cx="60" cy="650" r="4"/>
+    <circle cx="90" cy="650" r="4"/>
+    <circle cx="120" cy="650" r="4"/>
+    <circle cx="60" cy="680" r="4"/>
+    <circle cx="90" cy="680" r="4"/>
+    <circle cx="120" cy="680" r="4"/>
+  </g>
+
+  <!-- desk -->
+  <rect x="120" y="560" width="460" height="18" rx="4" fill="#14152b"/>
+
+  <!-- laptop base -->
+  <path d="M180 560 L520 560 L500 600 L200 600 Z" fill="#2a2856"/>
+  <!-- laptop screen -->
+  <rect x="220" y="330" width="260" height="235" rx="10" fill="#0f0e26"/>
+  <rect x="236" y="346" width="228" height="188" rx="4" fill="url(#screenGrad)"/>
+
+  <!-- screen content: simple UI lines -->
+  <rect x="256" y="368" width="120" height="10" rx="5" fill="#ffffff" opacity="0.85"/>
+  <rect x="256" y="390" width="188" height="8" rx="4" fill="#ffffff" opacity="0.5"/>
+  <rect x="256" y="406" width="150" height="8" rx="4" fill="#ffffff" opacity="0.5"/>
+  <rect x="256" y="432" width="80" height="60" rx="6" fill="#ffffff" opacity="0.25"/>
+  <rect x="346" y="432" width="80" height="60" rx="6" fill="#ffffff" opacity="0.35"/>
+  <rect x="256" y="504" width="90" height="16" rx="8" fill="#ffffff" opacity="0.9"/>
+
+  <!-- person silhouette sitting at desk -->
+  <g>
+    <!-- chair back -->
+    <rect x="330" y="600" width="16" height="90" rx="8" fill="#14152b"/>
+    <!-- torso -->
+    <path d="M300 660 Q350 630 400 660 L410 760 Q350 780 290 760 Z" fill="#615cfd"/>
+    <!-- head -->
+    <circle cx="350" cy="620" r="30" fill="#f0c9a0"/>
+    <!-- arm to laptop -->
+    <path d="M310 665 Q280 640 260 610" stroke="#f0c9a0" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <path d="M390 665 Q420 640 440 610" stroke="#f0c9a0" stroke-width="14" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- floating coffee cup -->
+  <g transform="translate(510,610)">
+    <rect x="0" y="10" width="34" height="30" rx="4" fill="#ffffff" opacity="0.9"/>
+    <path d="M34 16 h10 a8 8 0 0 1 0 16 h-10" stroke="#ffffff" stroke-width="4" fill="none" opacity="0.9"/>
+  </g>
+
+  <!-- plant -->
+  <g transform="translate(140,470)">
+    <rect x="10" y="60" width="30" height="30" rx="4" fill="#2a2856"/>
+    <path d="M25 60 C10 30 10 10 25 0 C40 10 40 30 25 60 Z" fill="#4bd37b" opacity="0.85"/>
+    <path d="M25 55 C15 35 15 20 25 10 C35 20 35 35 25 55 Z" fill="#3fbd6b" opacity="0.85"/>
+  </g>
+</svg>
