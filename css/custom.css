@@ -1,0 +1,144 @@
+/* ==========================================================
+   Only the handful of rules Bootstrap 5 utility classes can't
+   express: brand color, hero gradient, and hover overlays.
+   Everything else in this project uses Bootstrap 5 classes.
+   ========================================================== */
+
+:root {
+  --accent: #615cfd;
+  --accent-dark: #4e49d1;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+}
+h1, h2, h3, h4, .navbar-brand, .btn {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar */
+#mainNav {
+  background-color: #14152b;
+}
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #fff;
+}
+.say-hello-link {
+  color: #fff !important;
+  font-size: 0.85rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Accent buttons */
+.btn-accent {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+}
+.btn-accent:hover {
+  background-color: var(--accent-dark);
+  color: #fff;
+}
+.text-accent { color: var(--accent) !important; }
+.border-accent { border-color: var(--accent) !important; }
+
+/* Hero */
+.hero-section {
+  min-height: 640px;
+  background: linear-gradient(120deg, #14152b 0%, #2a2465 55%, #4b3fb0 100%);
+}
+.hero-heading {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* About */
+.about-section {
+  background-color: #14152b;
+}
+
+/* Portfolio hover overlay */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.portfolio-item img {
+  transition: transform 0.4s ease;
+  display: block;
+}
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 21, 43, 0.9), rgba(20, 21, 43, 0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+.portfolio-item:hover img {
+  transform: scale(1.08);
+}
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* Team hover overlay */
+.team-thumb {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.team-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(97, 92, 253, 0.85);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.team-thumb:hover .team-overlay {
+  opacity: 1;
+}
+.team-overlay a {
+  font-size: 1.1rem;
+  margin: 0 0.4rem;
+}
+
+/* Play button */
+.play-btn {
+  width: 64px;
+  height: 64px;
+  background-color: var(--accent);
+  color: #fff;
+}
+.play-btn:hover {
+  background-color: var(--accent-dark);
+  color: #fff;
+}
+
+/* Footer */
+.footer-section {
+  background-color: #14152b;
+}
+.footer-logo {
+  filter: brightness(0) invert(1);
+}
+.social-link {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.social-link:hover {
+  background-color: var(--accent);
+}
